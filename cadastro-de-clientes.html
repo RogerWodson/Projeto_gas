@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Cadastro de Clientes</title>
+
+</head>
+
+<body>    
+    <div class="cabecalho">
+        <div class="logo">
+            <img src="logo.png" alt="IMAGEM DE LOGO">
+        </div>
+        <div class="menu">
+            <ul type="none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Cadastro</a>
+                    <ul>
+                        <li><a href="cadastro-de-clientes.html">Clientes</a></li>
+                        <li><a href="cadastro-de-produtos.html">Produtos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pesquisa</a>
+                    <ul>
+                        <li><a href="pesquisa-de-clientes.html">Clientes</a></li>
+                        <li><a href="pesquisa-de-produtos.html">Produtos</a></li>
+                    </ul>
+                </li>
+                <li><a href="estoque.html">Estoque</a></li>
+                <li><a href="pdv.html">Vendas</a></li>
+                <li><a href="relatorios.html">Relatorios</a></li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="corpo">
+            <h1>Cadastro de Clientes</h1>
+            <form action="http://127.0.0.1:5500/cadastro-de=clientes.html" method="post">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="identificacao">
+                        <label>Nome: <input type="text" id="nome" placeholder="Nome" size="70" required></label>
+                        <label> Sexo:
+                            <select name="optwpp" id="optwpp">
+                                <option value="0">Mulher</option>
+                                <option value="1">Homem</option>
+                            </select>
+                        </label>
+                        <label>Telefone: <input type="tel" id="numtelefone" placeholder="Telefone"></label>
+                        <label>Celular: <input type="tel" id="numcelular" placeholder="Celular"></label>
+                        <label> Wpp:
+                        <select name="optwpp" id="optwpp">
+                            <option value="0">Sim</option>
+                            <option value="1">Não</option>
+                        </select>
+                        <hr>
+                        <label>CPF/CNPJ: <input type="text" id="cpf_cnpj" placeholder="CPF/CNPJ"></label>
+
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <div class="endereco"> 
+                        <label>CEP: <input type="text" id="numcep" placeholder="CEP" size="10" required></label>
+                        <label>Endereço: <input type="text" id="endereco" placeholder="Endereço" size="45"></label>
+                        <label>Nº: <input type="text" id="numcasa" placeholder="Nº" size="10"></label>
+                        <label>Complemento: <input id="complemento" type="text" placeholder="Complemento" size="40"></label>
+                        <label>Bairro: <input type="text" id="bairro" placeholder="Bairro" size="25"></label>
+                        <label>Cidade: <input type="text" id="cidade" placeholder="Cidade" size="15"></label>
+                        <label>UF: <input type="text" id="uf" placeholder="UF" size="5"></label>
+                        <hr>
+                        <label>Observações: <input type="text" id="observacao" placeholder="Observações" size="100"></label>
+                    </div>
+                </fieldset>
+                <button type="submit">Salvar</button>
+
+            </form>
+                        
+        </div>
+
+<script src="funcoesJS.js"></script>
+</body>
+
+</html>
