@@ -2,15 +2,17 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-  }  /* selecionar todos os elemntos e definir margens zeradas para usar do nosso jeito */
-  
+}
+
+/* selecionar todos os elemntos e definir margens zeradas para usar do nosso jeito */
+
 body {
     width: 100%;
     min-height: 100vh;
-    background: url(img-de-fundo.webp) top center no-repeat;
-  }
-  
-.cabecalho{
+    background: url(img/img-de-fundo.webp) top center no-repeat;
+}
+
+.cabecalho {
     position: fixed;
     top: 0;
     left: 0;
@@ -19,9 +21,9 @@ body {
     font-size: 20px;
     width: auto;
     height: auto;
-    }
+}
 
-.logo{
+.logo {
     letter-spacing: 1px;
     float: left;
     padding: 0 6px;
@@ -30,58 +32,114 @@ body {
 .logo img {
     min-height: 30px;
     max-height: 80px;
-    height: auto; 
+    height: auto;
 }
 
-.menu{
+.menu {
     float: right;
     line-height: 30px;
     margin: 0 20px;
     flex-direction: row;
     display: flex;
     justify-content: center;
-  }
+}
 
-  .menu ul{
+.menu ul {
     display: flex;
     list-style: none;
     margin-top: 2%;
-  }
+}
 
-.menu ul li:hover{
+.menu ul li:hover {
     background-color: rgb(166, 178, 247);
 }
-.menu ul li ul li:hover{
+
+.menu ul li ul li:hover {
     background-color: rgb(152, 206, 188);
 }
 
-.menu ul ul{
+.menu ul ul {
     display: none;
     margin: 0;
 }
 
 
-.menu ul li:hover>ul{
+.menu ul li:hover>ul {
     display: block;
 }
 
-.menu ul li a{
+.menu ul li a {
     text-decoration: none;
-    color: rgb(19, 5, 211);
+    color: rgb(9, 4, 82);
     font-weight: lighter;
     padding: 0 20px;
 }
 
-.corpo, .noticias{
+.corpo,
+.noticias {
     max-width: 80%;
-    position:absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.corpo form fieldset{
-       line-height: 3vw;
-   }
+.corpo form fieldset {
+    line-height: 3vw;
+}
 
+input,
+select {
+    height: 25px;
+    text-align: center;
+    font-size: medium;
+}
+
+input:focus {
+    background-color: #e3e7e7;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    font-size: medium;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border: 1px red solid;
+    margin: auto;
+    background-color: rgb(85, 105, 105);
+    color:antiquewhite;
+
+}
+
+.redes {
+    margin-right: 30px;
+}
+
+
+.img-rodape {
+    width: 50px;
+    text-align: left;
+}
+
+.fixa {
+    background-position: top;
+    background-repeat: no-repeat;
+    position: fixed;
+    right: 85vw;
+    bottom: 6vh;
+}
+
+.fixa img {
+    width: 15vw;
+}

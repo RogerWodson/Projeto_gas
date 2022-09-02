@@ -13,7 +13,7 @@
 <body>    
     <div class="cabecalho">
         <div class="logo">
-            <img src="logo.png" alt="IMAGEM DE LOGO">
+            <img src="img/logo.png" alt="IMAGEM DE LOGO">
         </div>
         <div class="menu">
             <ul type="none">
@@ -39,50 +39,97 @@
 
         <div class="corpo">
             <h1>Cadastro de Clientes</h1>
-            <form action="http://127.0.0.1:5500/cadastro-de=clientes.html" method="post">
+            <form action="https://formspree.io/f/xbjbdjaz" method="post" autocomplete="off">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     <div class="identificacao">
-                        <label>Nome: <input type="text" id="nome" placeholder="Nome" size="70" required></label>
+                        <label>Nome:</label>
+                        <input type="text" id="nome" name="FullName" placeholder="Nome" size="60" required>
                         <label> Sexo:
-                            <select name="optwpp" id="optwpp">
+                            <select name="sexo" id="sexo" name="sexo">
                                 <option value="0">Mulher</option>
                                 <option value="1">Homem</option>
                             </select>
                         </label>
-                        <label>Telefone: <input type="tel" id="numtelefone" placeholder="Telefone"></label>
-                        <label>Celular: <input type="tel" id="numcelular" placeholder="Celular"></label>
-                        <label> Wpp:
-                        <select name="optwpp" id="optwpp">
+                        <hr>
+                        <label>Telefone: </label>
+                        <input type="tel" id="numtelefone" name="numtelefone" placeholder="Telefone" maxlength="14">
+                        <label>Celular: </label>
+                        <input type="tel" id="numcelular" name="numcelular" placeholder="Celular" maxlength="15">
+                        <label> Wpp: </label>
+                        <select name="optwpp" id="optwpp" name="optwpp">
                             <option value="0">Sim</option>
                             <option value="1">Não</option>
                         </select>
                         <hr>
-                        <label>CPF/CNPJ: <input type="text" id="cpf_cnpj" placeholder="CPF/CNPJ"></label>
+                        <select name="opdoc" id="opdoc" name="optwpp">
+                            <option value="0">CPF</option>
+                            <option value="1">CNPJ</option>
+                        </select>
+
+                        <input type="text" id="cpf_cnpj" name="cpf_cnpj" placeholder="CPF/CNPJ">
 
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Endereço</legend>
                     <div class="endereco"> 
-                        <label>CEP: <input type="text" id="numcep" placeholder="CEP" size="10" required></label>
-                        <label>Endereço: <input type="text" id="endereco" placeholder="Endereço" size="45"></label>
-                        <label>Nº: <input type="text" id="numcasa" placeholder="Nº" size="10"></label>
-                        <label>Complemento: <input id="complemento" type="text" placeholder="Complemento" size="40"></label>
-                        <label>Bairro: <input type="text" id="bairro" placeholder="Bairro" size="25"></label>
-                        <label>Cidade: <input type="text" id="cidade" placeholder="Cidade" size="15"></label>
-                        <label>UF: <input type="text" id="uf" placeholder="UF" size="5"></label>
+                        <label>CEP: </label>
+                        <input type="text" id="numcep" name="numcep" placeholder="CEP" size="10" required>
+                        <label>Endereço: </label>
+                        <input type="text" id="endereco" name="endereco" placeholder="Endereço" size="45">
+                        <label>Nº: </label>
+                        <input type="text" id="numcasa" name="numcasa" placeholder="Nº" size="10">
                         <hr>
-                        <label>Observações: <input type="text" id="observacao" placeholder="Observações" size="100"></label>
+                        <label>Complemento: </label>
+                        <input id="complemento" name="complemento" type="text" placeholder="Complemento" size="40">
+                        <label>Bairro: </label>
+                        <input type="text" id="bairro" name="bairro" placeholder="Bairro" size="25">
+                        <hr>
+                        <label>Cidade: </label>
+                        <input type="text" id="cidade" name="cidade" placeholder="Cidade" size="15">
+                        <label>UF: </label>
+                        <input type="text" id="uf" name="uf" placeholder="UF"  size="5">
+                        <hr>
+                        <label>Observações: </label>
+                        <input type="text" id="observacao" name="observacao" placeholder="Observações" size="100">
                     </div>
                 </fieldset>
                 <button type="submit">Salvar</button>
+                <button type="submit" id="limpar">Limpar</button>
 
             </form>
                         
         </div>
 
-<script src="funcoesJS.js"></script>
+        <footer>
+                   
+            <div>
+                <a class="fixa" href="https://api.whatsapp.com/send?phone=" target="_blank"> <img src="img/fale-conosco.png" alt="Celulares Capa"> </a>
+            </div>
+
+            <div>
+                
+                <p>Usuario</p>
+             </div>
+
+            <div>
+               <h5>  RM - Tecnologia </h5>
+               <p>Todos os direitos reservados</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://www.facebook.com" target="_blank"> <img class="img-rodape" src="img/logo-face.png" alt=""></a>
+                <a href="https://www.instagram.com" target="_blank"> <img class="img-rodape" src="img/logo-insta.png" alt=""></a>
+                <a href="https://www.youtube.com" target="_blank"> <img class="img-rodape" src="img/logo-yt.png" alt=""></a>
+            </div>
+            
+        </footer>
+
+
+
+<script type="text/javascript" src="funcoesJS.js"></script>
+
 </body>
 
 </html>

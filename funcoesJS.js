@@ -26,12 +26,19 @@ function popularform(resposta){
     alert('Cep não encontrado');
     return
   }
-
   endereco.value = resposta.logradouro;
   bairro.value = resposta.bairro;
   cidade.value = resposta.localidade;
   uf.value = resposta.uf;
 }
+
+
 // ----x-----x-----x---
+
+//add mascaras nos inputs
+
+
+
+//add função para botão limpar
 
 
