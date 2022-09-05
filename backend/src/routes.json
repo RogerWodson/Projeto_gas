@@ -1,0 +1,10 @@
+[
+    {
+        "name"       : "/",
+        "controller" : "welcome",
+        "method"     : "welcome",
+        "type"       : "GET"
+    }
+
+
+]

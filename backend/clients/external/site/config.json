@@ -1,0 +1,14 @@
+{
+    "client"     : "site",
+    "logPath"    : "../../",
+    "accessToken": "1234",
+    
+    "host"       : "",
+    "username"   : "",
+    "password"   : "",
+    "SMTPSecure" : "",
+    "port"       : "",
+
+    "server": "local",
+    "timezone": "SP"
+}
